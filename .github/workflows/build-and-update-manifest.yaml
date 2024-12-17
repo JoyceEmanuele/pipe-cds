@@ -33,7 +33,7 @@ jobs:
         run: |
           cp configfile_example.json5 configfile.json5
           docker build -t gcr.io/$GCP_PROJECT_ID/computed-data-teste:${IMAGE_TAG} -f Dockerfile .
-          docker push gcr.io/$GCP_PROJECT_IDcomputed-data-teste:${IMAGE_TAG}
+          docker push gcr.io/$GCP_PROJECT_ID/computed-data-teste:${IMAGE_TAG}
           docker image rm  gcr.io/$GCP_PROJECT_ID/computed-data-teste:${IMAGE_TAG}
 
       - name: Checkout Manifest Repository
