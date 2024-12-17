@@ -16,6 +16,8 @@ RUN apt-get update && \
     export CARGO_NET_GIT_FETCH_WITH_CLI=true && \
     apt-get install -y librust-openssl-dev default-libmysqlclient-dev protobuf-compiler
 
+RUN cargo install diesel_cli --no-default-features --features postgres
+
 # Copiar o código-fonte restante e compilar
 COPY . .
 RUN RUSTFLAGS=-Awarnings cargo build --release
@@ -29,11 +31,11 @@ RUN ls
 RUN apt-get update && \
     apt-get install -y ca-certificates libpq5 && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/* && \
-    cargo install diesel_cli --no-default-features --features postgres   
+    rm -rf /var/lib/apt/lists/* 
 
 # Copiar o binário compilado da stage anterior
 COPY --from=builder /app/target/release/computed-data-service .
+COPY --from=builder /usr/local/cargo/bin/diesel /usr/local/bin/ 
 COPY --from=builder /app/configfile.json5 .
 
 # Executar o binário
