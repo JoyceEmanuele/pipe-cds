@@ -1,0 +1,10 @@
+pub mod dma_hist;
+pub mod laager_hist;
+pub mod compiler_queues;
+pub mod energy_hist;
+pub mod dut_hist;
+pub mod dac_hist;
+pub mod dri_hist;
+pub mod dmt_hist;
+pub mod dal_hist;
+pub mod dam_hist;

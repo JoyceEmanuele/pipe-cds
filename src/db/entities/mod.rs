@@ -1,0 +1,17 @@
+pub mod clients;
+pub mod energy_hist;
+pub mod units;
+pub mod waters_hist;
+pub mod electric_circuits;
+pub mod machines;
+pub mod disponibility_hist;
+pub mod chiller;
+pub mod energy_demand_minutes_hist;
+pub mod energy_efficiency_hour_hist;
+pub mod device_disponibility_hist;
+pub mod water_consumption_forecast;
+pub mod energy_consumption_forecast;
+pub mod energy_monthly_consumption_target;
+pub mod assets;
+pub mod devices_l1_totalization_hist;
+pub mod last_device_telemetry_time;

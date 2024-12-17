@@ -1,0 +1,26 @@
+{
+  "AWS_ACCESS_KEY_ID": "abc123_fake_key_id",
+  "AWS_SECRET_ACCESS_KEY": "abc123_fake_secret_key",
+
+  "POSTGRES_DATABASE_URL": "postgres://postgres:uniquepassword@127.0.0.1:5432/centraltelemetrias",
+
+  "API_PORT": 46133,
+
+  "APISERVER_URL": "http://localhost:8443",
+  "APISERVER_TOKEN": "Plain devmaster:devmaster",
+
+  "APILAAGER_URL": "https://iot.laager.com.br",
+  "APILAAGER_GRANT_TYPE": "password",
+  "APILAAGER_CLIENT_ID": "0123456",
+  "APILAAGER_CLIENT_SECRET": "s3cr3t",
+  "APILAAGER_USERNAME": "testuser",
+  "APILAAGER_PASSWORD": "uniquepassword",
+
+  "CUSTOM_TABLE_NAMES_DMA": [],
+  "CUSTOM_TABLE_NAMES_DRI": [],
+  "CUSTOM_TABLE_NAMES_DUT": [],
+  "CUSTOM_TABLE_NAMES_DAC": [],
+  "CUSTOM_TABLE_NAMES_DMT": [],
+  "CUSTOM_TABLE_NAMES_DAL": [],
+  "CUSTOM_TABLE_NAMES_DAM": []
+}

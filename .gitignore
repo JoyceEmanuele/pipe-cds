@@ -1,0 +1,4 @@
+.vscode
+/target
+/configfile.json5
+/certs

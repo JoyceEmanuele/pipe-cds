@@ -1,0 +1,3 @@
+-- Your SQL goes here
+ALTER TABLE UNITS ADD COLUMN city_name varchar(100) DEFAULT NULL;
+ALTER TABLE UNITS ADD COLUMN state_name varchar(100) DEFAULT NULL;

@@ -1,0 +1,2 @@
+-- Your SQL goes here
+ALTER TABLE MACHINES ADD COLUMN device_code_autom TEXT DEFAULT NULL;

@@ -1,0 +1,13 @@
+[Unit]
+Description=computed data
+
+[Service]
+Type=simple
+User=diel
+WorkingDirectory=/home/diel/computed-data-service
+ExecStart=/home/diel/computed-data-service/computed-data-service
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
